@@ -1,0 +1,138 @@
+% mystyle.sty
+% by Satoshi Makita
+% originally presented by MAEDA Yusuke
+
+% 参照する名前たち
+ \newcommand{\figurename}{Fig.~}
+%  \newcommand{\figurenamej}{図}
+
+ \newcommand{\tablename}{Table~}
+% \newcommand{\tablenamej}{表}
+
+\newcommand{\sectioname}{Sec.~}
+
+\newcommand{\bm}[1]{\boldsymbol{#1}}
+
+%% \newcommand{\chapref}[1]{\ref{#1}章}
+ \newcommand{\secref}[1]{\ref{#1}節}
+ \newcommand{\ssecref}[1]{\ref{#1}項}
+ \newcommand{\sssecref}[1]{\ref{#1}項}
+%% \newcommand{\condref}[1]{条件(\ref{#1})}
+\newcommand{\eqjref}[1]{式\eqref{#1}} % 式（）
+%% \newcommand{\theoref}[1]{定理\ref{#1}}
+
+%\renewcommand{\eqref}[1]{（\ref{#1}）}
+
+% \DeclareMathOperator*{\maximize}{maximize}	
+
+\newtheorem{theorem}{定理}
+
+%% \newcommand{\stepref}[1]{手順\ref{#1}}
+\newcommand{\stepref}[1]{Step~\ref{#1}}
+\newcounter{stepnumber}
+\newenvironment{steps}{%
+  \begin{list}{\bf Step~\arabic{stepnumber}.}{%
+    \usecounter{stepnumber}%
+    \setlength{\itemsep}{0pt}%
+    \setlength{\parsep}{0pt}%
+    \setlength{\partopsep}{0pt}%
+    \setlength{\labelwidth}{0pt}%
+    \setlength{\leftmargin}{10pt}%
+   }}
+  {\end{list}}
+
+% 対角行列
+\newcommand{\diag}{\mathop{\mathrm{diag}}\nolimits}
+
+% ノルム
+\newcommand{\norm}[1]{\|#1\|}
+
+% ハイフネーション
+\hyphenation{Dijk-stra}
+\hyphenation{Gauss-ian}
+\hyphenation{geo-met-ric}
+\hyphenation{Hamil-ton-ian}
+\hyphenation{hexa-dec-i-mal}
+\hyphenation{in-fra-struc-ture}
+\hyphenation{Le-gendre}
+\hyphenation{Lip-schitz}
+\hyphenation{man-u-script}
+\hyphenation{Markov-ian}
+\hyphenation{non-smooth}
+\hyphenation{pseu-do-in-verse}
+\hyphenation{semi-def-in-ite}
+\hyphenation{ser-vo-mech-anism}
+\hyphenation{grasp-less}
+\hyphenation{cag-ing}
+\hyphenation{par-am-eter}
+\hyphenation{speci-fi-ca-tion}
+
+% 間隔の狭い箇条書き
+%% % enumerate 環境の再定義
+%% \renewenvironment{enumerate}
+%%   {
+%%   	\setlength\abovedisplayskip{0.5\abovedisplayskip}
+%%    \ifnum \@enumdepth >\thr@@\@toodeep\else
+%%    \advance\@enumdepth\@ne
+%%    \edef\@enumctr{enum\romannumeral\the\@enumdepth}%
+%%    \list{\csname label\@enumctr\endcsname}{%
+%%       \iftdir
+%%          \ifnum \@listdepth=\@ne \topsep.5\normalbaselineskip
+%%            \else\topsep\z@\fi
+%% % ここにあった行を下に移動
+%%          \labelwidth1zw \labelsep.3zw
+%%          \ifnum \@enumdepth=\@ne \leftmargin1zw\relax
+%%            \else\leftmargin\leftskip\fi
+%%          \advance\leftmargin 1zw
+%%       \fi
+%% 		\topsep 0.1\baselineskip
+%%         \parskip\z@ \itemsep\z@ \parsep\z@% この行が移動
+%% %          \parskip 0pt \itemsep\z@ \parsep 2pt
+%%          \usecounter{\@enumctr}%
+%%          \def\makelabel##1{\hss\llap{##1}}}%
+%%    \fi}{\endlist}
+%% %%
+%% %% itemize 環境の再定義
+%% \renewenvironment{itemize}
+%%   {\ifnum \@itemdepth >\thr@@\@toodeep\else
+%%    \advance\@itemdepth\@ne
+%%    \edef\@itemitem{labelitem\romannumeral\the\@itemdepth}%
+%%    \expandafter
+%%    \list{\csname \@itemitem\endcsname}{%
+%%       \iftdir
+%%          \ifnum \@listdepth=\@ne \topsep.5\normalbaselineskip
+%%            \else\topsep\z@\fi
+%% % ここにあった行を下に移動
+%%          \labelwidth1zw \labelsep.3zw
+%%          \ifnum \@itemdepth =\@ne \leftmargin1zw\relax
+%%            \else\leftmargin\leftskip\fi
+%%          \advance\leftmargin 1zw
+%%       \fi
+%% 		\topsep 0.1\baselineskip
+%%         \parskip\z@ \itemsep\z@ \parsep\z@% この行が移動
+%% %          \parskip 0pt \itemsep\z@ \parsep 2pt
+%%          \def\makelabel##1{\hss\llap{##1}}}%
+%%    \fi}{\endlist}
+
+%% \newenvironment{step}
+%%   {
+%%   	\setlength\abovedisplayskip{0.5\abovedisplayskip}
+%%    \ifnum \@enumdepth >\thr@@\@toodeep\else
+%%    \advance\@enumdepth\@ne
+%%    \edef\@enumctr{enum\romannumeral\the\@enumdepth}%
+%%    \list{\csname label\@enumctr\endcsname}{%
+%%       \iftdir
+%%          \ifnum \@listdepth=\@ne \topsep.5\normalbaselineskip
+%%            \else\topsep\z@\fi
+%% % ここにあった行を下に移動
+%%          \labelwidth1zw \labelsep.3zw
+%%          \ifnum \@enumdepth=\@ne \leftmargin1zw\relax
+%%            \else\leftmargin\leftskip\fi
+%%          \advance\leftmargin 1zw
+%%       \fi
+%% 		\topsep 0.1\baselineskip
+%%         \parskip\z@ \itemsep\z@ \parsep\z@% この行が移動
+%% %          \parskip 0pt \itemsep\z@ \parsep 2pt
+%%          \usecounter{\@enumctr}%
+%%          \def\makelabel##1{\hss\llap{##1}}}%
+%%    \fi}{\endlist}
