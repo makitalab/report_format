@@ -1,6 +1,6 @@
-\documentclass[a4paper,11pt,dvips]{jsarticle}
+\documentclass[a4paper,11pt,dvipdfmx]{jsarticle}
 
-\usepackage{type1cm,times}
+\usepackage{type1cm,newtxtext}
 \usepackage{amsmath,amssymb, txfonts}
 \usepackage{graphicx}
 \usepackage{fancyhdr}
@@ -11,60 +11,63 @@
 \newcommand{\bm}[1]{\boldsymbol{#1}}
 
 \thispagestyle{fancy}
-\lhead{Œ¤‹†‰ï‘—¿}
-\rhead{2012.05.08} % “ú‚ğw’è‚·‚éê‡
-%\rhead{\today} % ƒRƒ“ƒpƒCƒ‹‚Ì“ú•t‚ğ“ü‚ê‚½‚¢ê‡
+\lhead{ç ”ç©¶ä¼šè³‡æ–™}
+\rhead{2012.05.08} % æ—¥æ™‚ã‚’æŒ‡å®šã™ã‚‹å ´åˆ
+%\rhead{\today} % ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã®æ—¥ä»˜ã‚’å…¥ã‚ŒãŸã„å ´åˆ
 
 
 \begin{document}
 
 \begin{center}
 \bf \Large
-ƒƒ{ƒbƒg‚ÌŒ¤‹† %Œ¤‹†‘è–Ú
+ãƒ­ãƒœãƒƒãƒˆã®ç ”ç©¶ %ç ”ç©¶é¡Œç›®
 
 \normalsize
-ê “c —@ %–¼‘O
+æ§‡ç”° è«­ %åå‰
 \end{center}
 
 \pagestyle{fancy}
 
 
-\section{i’»ó‹µ}
+\section{é€²æ—çŠ¶æ³}
 
-Œ¤‹†‚ª‚Æ‚Ä‚à’»‚Á‚½D
+ç ”ç©¶ãŒã¨ã¦ã‚‚æ—ã£ãŸï¼
 
 
-\subsection{‹ï‘Ì“I‚É‚â‚Á‚½‚±‚Æ}
+\subsection{å…·ä½“çš„ã«ã‚„ã£ãŸã“ã¨}
 
-V‚µ‚¢ƒƒ{ƒbƒg‚Ì‹@\‚ğlˆÄ‚µ‚½i\figurename\ref{fig:kosen50th_kk}jD
-]—ˆ‚Ì‚à‚Ì\cite{korenara}‚É”ä‚×‚Ä3”{‚Ì«”\‚ğ‚à‚ÂD
+æ–‡çŒ®\cite{nakamura1990jsice}ã®ç†è«–ã‚’ã‚‚ã¨ã«ï¼Œæ–°ã—ã„ãƒ­ãƒœãƒƒãƒˆã®æ©Ÿæ§‹ã‚’è€ƒæ¡ˆã—ãŸï¼ˆ\figurename\ref{fig:robot}ï¼‰ï¼
+å¾“æ¥ã®ã‚‚ã®\cite{korenara}ã«æ¯”ã¹ã¦3å€ã®æ€§èƒ½ã‚’ã‚‚ã¤ï¼
 
 \begin{figure}[!b]
 \centering
 \includegraphics[width=0.4\columnwidth, clip]
-{kosen50th_kk.eps}
+ {manipulator-crop.pdf}
 \caption{New robot}
-\label{fig:kosen50th_kk}
+\label{fig:robot}
 \end{figure}%
 
 
-\subsection{‰Û‘è}
+\subsection{èª²é¡Œ}
 
-V‚µ‚­lˆÄ‚µ‚½ƒƒ{ƒbƒg‚Ì‹@\‚Í“ï‚µ‚·‚¬‚Äì‚ê‚È‚¢D
+æ–°ã—ãè€ƒæ¡ˆã—ãŸãƒ­ãƒœãƒƒãƒˆã®æ©Ÿæ§‹ã¯é›£ã—ã™ãã¦ä½œã‚Œãªã„ï¼
 
 
-\section{¡Œã‚Ì—\’è}
+\section{ä»Šå¾Œã®äºˆå®š}
 
 \begin{description}
-\item [`5Œ31“ú] •¶Œ£’²¸
-\item [6Œ1“ú`] ‹@\İŒv
+\item [ã€œ5æœˆ31æ—¥] æ–‡çŒ®èª¿æŸ»
+\item [6æœˆ1æ—¥ã€œ] æ©Ÿæ§‹è¨­è¨ˆ
 \end{description}
 
 \begin{thebibliography}{9}
+\bibitem{nakamura1990jsice}
+ä¸­æ‘ ä»å½¦ï¼š``æŠŠæŒã¨ã‚ã‚„ã¤ã‚Š''ï¼Œè¨ˆæ¸¬ã¨åˆ¶å¾¡ï¼Œ29å·»ï¼Œ3å·ï¼Œpp.|206-212ï¼Œ1990ï¼
+
 \bibitem{korenara}
-’Ø“à FiC‘å‹÷ ‹vC•Ä“c Š®F
-``‚±‚ê‚È‚ç‚Å‚«‚éƒƒ{ƒbƒg‘n‘¢İŒv''C
-u’kĞC2007D
+åªå†… å­å¸ï¼Œå¤§éš… ä¹…ï¼Œç±³ç”° å®Œï¼š
+``ã“ã‚Œãªã‚‰ã§ãã‚‹ãƒ­ãƒœãƒƒãƒˆå‰µé€ è¨­è¨ˆ''ï¼Œ
+è¬›è«‡ç¤¾ï¼Œ2007ï¼
 
 \end{thebibliography}
 
