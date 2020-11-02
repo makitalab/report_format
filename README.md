@@ -1,2 +1,2 @@
 # report_format
-often used for reports
+often used for daily reports
